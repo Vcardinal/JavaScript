@@ -37,13 +37,13 @@ botonVaciar.addEventListener("click", () => {
   renderizarCarrito();
 });
 
-// Función 1: obtener extras seleccionados
+// Obtener extras
 function obtenerExtras() {
   const checkboxes = document.querySelectorAll(".extra:checked");
   return Array.from(checkboxes).map(cb => cb.value);
 }
 
-// Función 2: calcular precio final
+// Caclular precio
 function calcularPrecio(diametro, extras) {
   let precioBase;
 
@@ -66,7 +66,7 @@ function calcularPrecio(diametro, extras) {
   return precioBase + precioExtras;
 }
 
-// Función 3: crear objeto pedido
+// Crear pedido
 function crearPedido(diametro, sabor, extras) {
   const precioFinal = calcularPrecio(diametro, extras);
 
@@ -78,7 +78,7 @@ function crearPedido(diametro, sabor, extras) {
   };
 }
 
-// Función 4: renderizar carrito
+// Carrito
 function renderizarCarrito() {
   carritoLista.innerHTML = "";
   let total = 0;
@@ -103,7 +103,7 @@ function renderizarCarrito() {
   totalCarrito.innerHTML = `<strong>Total:</strong> $${total}`;
 }
 
-// Función 5: guardar en localStorage
+// Guardado
 function guardarCarrito() {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
@@ -136,7 +136,7 @@ botonConfirmar.addEventListener("click", () => {
 
   contenedorResumen.innerHTML = resumenHTML;
 
-  // Opcional: vaciar carrito tras confirmación
+  // vaciar carrito
   carrito.length = 0;
   guardarCarrito();
   renderizarCarrito();
