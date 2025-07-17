@@ -1,18 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!---js--->
-    <script defer src="./js/main.js"></script>
-
-    <title>Deli Javascrip</title>
+  <meta charset="UTF-8">
+  <title>Simulador Delicakes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <h1>🧁 Personalizá tu torta</h1>
 
-    <h1>Proyecto Deli</h1>
+  <form id="formularioTorta">
+    <label for="diametro">Diámetro:</label>
+    <select id="diametro">
+      <option value="10">10 cm - $500</option>
+  <option value="15">15 cm - $800</option>
+  <option value="20">20 cm - $1100</option>
+    </select>
 
+    <label for="sabor">Sabor:</label>
+    <select id="sabor">
+      <option value="Vainilla">Vainilla</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Zanahoria">Zanahoria</option>
+    </select>
+
+    <fieldset>
+      <legend>Extras:</legend>
+      <label><input type="checkbox" value="Frutas" class="extra"> Decoración con frutas (+ $200)</label><br>
+      <label><input type="checkbox" value="Mensaje" class="extra"> Mensaje personalizado (+ $150)</label><br>
+      <label><input type="checkbox" value="Relleno extra" class="extra"> Relleno extra (+ $250)</label>
+    </fieldset>
+
+    <button type="submit">Agregar al carrito</button>
+  </form>
+
+  <h2>🛒 Carrito</h2>
+  <ul id="carritoLista"></ul>
+  <p id="totalCarrito"><strong>Total:</strong> $0</p>
+  <button id="vaciarCarrito">Vaciar carrito</button>
+  <button id="confirmarPedido">Confirmar pedido</button>
+<div id="resumenPedido"></div>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
