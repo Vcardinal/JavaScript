@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "tipo": "torta",
+    "nombre": "Torta de Chocolate",
+    "descripcion": "Bizcochuelo de chocolate relleno con crema de cacao",
+    "imagen": "https://i.pinimg.com/1200x/98/91/4a/98914a220262881b76bf37c1f9ec3643.jpg",
+    "precio": 500,
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "tipo": "torta",
+    "nombre": "Cheesecake de Frutilla",
+    "descripcion": "Base crocante con crema de queso y cobertura de frutilla",
+    "imagen": "https://i.pinimg.com/1200x/58/c4/ab/58c4ab56d1dc1f140fa7a7b8f51fa8be.jpg",
+    "precio": 450,
+    "stock": 6
+  },
+  {
+    "id": 3,
+    "tipo": "torta",
+    "nombre": "Red Velvet",
+    "descripcion": "Torta terciopelo rojo con crema de queso",
+    "imagen": "https://i.pinimg.com/736x/79/ff/a7/79ffa7389569a434d6ded90a6bc3b241.jpg",
+    "precio": 540,
+    "stock": 4
+  },
+  {
+    "id": 4,
+    "tipo": "torta",
+    "nombre": "Tarta de Manzana",
+    "descripcion": "Masa quebrada con manzanas caramelizadas",
+    "imagen": "https://i.pinimg.com/736x/ec/d6/f8/ecd6f8b758d8220bd4ebdd3bd541e2ec.jpg",
+    "precio": 480,
+    "stock": 5
+  },
+  {
+    "id": 5,
+    "tipo": "unidad",
+    "nombre": "Cupcakes Vainilla",
+    "precio": 120,
+    "stock": 10,
+    "descripcion": "Cupcakes esponjosos de vainilla con frosting",
+    "imagen": "https://i.pinimg.com/736x/b3/9a/ea/b39aeaa1113c82e86d6507ef7f768985.jpg"
+  },
+  {
+    "id": 6,
+    "tipo": "unidad",
+    "nombre": "Mini donuts",
+    "precio": 280,
+    "stock": 10,
+    "descripcion": "Mini donitas horneadas",
+    "imagen": "https://i.pinimg.com/736x/1a/05/6e/1a056ef800e2dcef0848e4182e63f212.jpg"
+  }
+]
+
+
